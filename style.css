@@ -109,9 +109,21 @@
   font-family: "Dazzle Unicase-Light", Helvetica, sans-serif;
   font-weight: 300;
   color: var(--souls-lab-colors-text-text);
-  font-size: 60px;
+  font-size: 55px;
   letter-spacing: 0;
   line-height: 84px;
+}
+
+.NDT-page .the-home-of-subtitle {
+  position: relative;
+  width: 100%;
+  margin: -16px 0 0 0;
+  font-family: "Ivystyle Sans", "IvyStyle Sans", "Plus Jakarta Sans", Helvetica, sans-serif;
+  font-weight: 400;
+  color: var(--souls-lab-colors-text-text);
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 30px;
 }
 
 .NDT-page .button {
@@ -202,7 +214,7 @@
   font-size: 34px;
   letter-spacing: 0;
   line-height: 51px;
-  white-space: nowrap;
+  white-space: normal;
   transition: color 0.35s ease;
 }
 
@@ -261,6 +273,24 @@
   font-weight: 700;
 }
 
+.NDT-page .ndt-bullet-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-left: 24px;
+  margin: 0;
+  list-style-type: disc;
+}
+
+.NDT-page .ndt-bullet-list li {
+  font-family: "Ivystyle Sans", "IvyStyle Sans", "Plus Jakarta Sans", Helvetica, sans-serif;
+  font-weight: 400;
+  color: #183345;
+  font-size: 20px;
+  line-height: 30px;
+  display: list-item;
+}
+
 .NDT-page .frame-4 {
   display: flex;
   flex-direction: column;
@@ -297,7 +327,7 @@
 }
 
 .NDT-page .quick-returns-don-t-3 {
-  width: 603px;
+  width: 650px;
   margin: 0;
   font-family: "Ivystyle Sans", "IvyStyle Sans", "Plus Jakarta Sans", Helvetica, sans-serif;
   font-weight: 400;
@@ -429,13 +459,20 @@
   position: relative;
   align-self: stretch;
   margin: 0;
-  font-family: "42dot Sans-Regular", Helvetica, sans-serif;
+  font-family: "42dot Sans", "42dot Sans-Regular", "Ivystyle Sans", "Plus Jakarta Sans", Helvetica, sans-serif;
   font-weight: 400;
   color: #183345;
   font-size: 20px;
   letter-spacing: 0;
   line-height: 30px;
   min-width: 280px;
+}
+
+.NDT-page .text-wrapper-3 strong,
+.NDT-page .text-wrapper-3 b {
+  font-family: "42dot Sans", "IvyStyle Sans-Bold", "Ivystyle Sans", "Plus Jakarta Sans", Helvetica, sans-serif;
+  font-weight: 700;
+  color: #183345;
 }
 
 .NDT-page .frame-7 {
@@ -994,8 +1031,13 @@
   }
 
   .NDT-page .the-home-of {
-    font-size: 48px;
+    font-size: 40px;
     line-height: 68px;
+  }
+
+  .NDT-page .the-home-of-subtitle {
+    font-size: 18px;
+    line-height: 28px;
   }
 
   .NDT-page .frame-4 {
@@ -1145,8 +1187,10 @@
   }
 
   .NDT-page .narrative-design-2 {
-    width: 190px;
-    height: auto;
+    content: url("img/ndt.svg");
+    width: 56px;
+    height: 24px;
+    object-fit: contain;
   }
 
   .NDT-page .frame-18 {
@@ -1159,6 +1203,8 @@
 
   .NDT-page .testimoniall {
     height: 240px;
+    top: auto;
+    position: relative;
   }
 
   .NDT-page .frame {
@@ -1167,8 +1213,14 @@
   }
 
   .NDT-page .the-home-of {
-    font-size: 32px;
+    font-size: 28px;
     line-height: 44px;
+  }
+
+  .NDT-page .the-home-of-subtitle {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: -12px;
   }
 
   .NDT-page .titile {
@@ -1179,7 +1231,8 @@
 
   .NDT-page .quick-returns-don-t,
   .NDT-page .p,
-  .NDT-page .span {
+  .NDT-page .span,
+  .NDT-page .ndt-bullet-list li {
     font-size: 16px;
     line-height: 24px;
   }
@@ -1202,20 +1255,78 @@
 
   .NDT-page .NARRATIVE-DESIGN {
     padding: 24px 16px 60px;
+    gap: 20px;
   }
 
   .NDT-page .ndt-card {
-    padding: 24px 20px;
+    padding: 32px 24px 24px 24px;
+    height: auto !important;
+    min-height: 0 !important;
+    cursor: default !important;
+    pointer-events: none;
+    background-color: #eaeef2 !important;
   }
 
+  .NDT-page .quick-returns-don-t-wrapper {
+    min-height: 0 !important;
+    padding: 0 !important;
+    gap: 0 !important;
+  }
+
+  .NDT-page .card-title,
   .NDT-page .quick-returns-don-t-4 {
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 28px !important;
+    line-height: 38px !important;
+    opacity: 1 !important;
+    min-height: 0 !important;
+    color: #183345 !important;
+  }
+
+  .NDT-page .card-body {
+    opacity: 1 !important;
+    max-height: none !important;
+    overflow: visible !important;
+    pointer-events: auto !important;
+    visibility: visible !important;
+    margin-top: 20px !important;
+    transition: none !important;
   }
 
   .NDT-page .text-wrapper-3 {
-    font-size: 15px;
-    line-height: 22px;
+    font-size: 18px !important;
+    line-height: 28px !important;
+    color: #183345 !important;
+  }
+
+  .NDT-page .text-wrapper-4 {
+    font-size: 18px !important;
+    line-height: 28px !important;
+    color: #183345 !important;
+    white-space: normal !important;
+  }
+
+  .NDT-page .card-footer {
+    display: flex !important;
+    justify-content: flex-end !important;
+    align-items: flex-end !important;
+    width: 100% !important;
+    margin-top: 16px !important;
+  }
+
+  .NDT-page .footer-spacer {
+    display: none !important;
+  }
+
+  .NDT-page .vector,
+  .NDT-page .card-arrow {
+    display: none !important;
+  }
+
+  .NDT-page .text-wrapper-6 {
+    opacity: 0.5 !important;
+    font-size: 56px !important;
+    line-height: 1 !important;
+    transition: none !important;
   }
 
   .NDT-page .frame-10 {
@@ -1242,16 +1353,50 @@
   .NDT-page .testimonial {
     padding: 24px 16px 20px;
     gap: 20px;
+    margin-top: 60px !important;
+  }
+
+  .NDT-page .frame-13 {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-end !important;
+    gap: 24px !important;
+    width: 100% !important;
+  }
+
+  .NDT-page .frame-14 {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-end !important;
+    text-align: right !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .NDT-page .frame-15 {
+    display: flex !important;
+    justify-content: flex-end !important;
+    align-items: flex-end !important;
+    width: 100% !important;
   }
 
   .NDT-page .quick-returns-don-t-7 {
     font-size: 32px;
     line-height: 44px;
+    text-align: right !important;
   }
 
   .NDT-page .quick-returns-don-t-8 {
     font-size: 16px;
     line-height: 26px;
+    text-align: right !important;
+  }
+
+  .NDT-page .frame-16 {
+    display: flex !important;
+    justify-content: flex-end !important;
+    align-items: center !important;
+    width: 100% !important;
   }
 
   .NDT-page .group-wrapper {
